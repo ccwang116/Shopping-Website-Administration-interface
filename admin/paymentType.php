@@ -18,7 +18,8 @@ require_once('../db.inc.php'); //引用資料庫連線
 </head>
 <body>
 <?php require_once('./templates/title.php'); ?>
-<hr />
+<div class="col-md-10">
+
 <h3>編輯付款方式</h3>
 
 <form name="myForm" method="POST" action="./deletePaymentType.php">
@@ -102,5 +103,6 @@ if($stmt->rowCount() > 0) {
 </table>
 
 </form>
+</div>
 </body>
 </html>

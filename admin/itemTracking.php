@@ -30,7 +30,7 @@ $page = $page < 1 ? 1 : $page; //若 page 小於 1，則回傳 1
 </head>
 <body>
 <?php require_once('./templates/title.php'); ?>
-<hr />
+<div class="col-md-10">
 
 <div class="search-bar">
 <h3>商品追蹤管理</h3>
@@ -124,5 +124,6 @@ $page = $page < 1 ? 1 : $page; //若 page 小於 1，則回傳 1
     <input type="hidden" name="pk" value="<?php echo $strPk; ?>">
     <button  class="btn mano_check"type="submit" name="smb" value="更新"><i class="fa far fa-file"></i> 更新</button>
 </form>
+                </div>
 </body>
 </html>

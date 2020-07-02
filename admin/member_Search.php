@@ -21,7 +21,7 @@ require_once('../db.inc.php');
 </head>
 <body>
 <?php require_once('./templates/title.php'); ?>
-<hr />
+<div class="col-md-10">
     <!-- 會員搜尋功能 -->
 <form action="member_Search.php" method="POST" entype= "multipart/form-data">
 <table class="search table table-stripe table-hover">
@@ -135,5 +135,6 @@ if($stmt2->rowCount() > 0) {
 </table>
 <input class="btn mano_delete fas fa-trash-alt" type="submit" name="smb" value="刪除">
 </form>
+</div>
 </body>
 </html>

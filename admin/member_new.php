@@ -11,7 +11,8 @@
 </head>
 <body>
 <?php require_once('./templates/title.php'); ?>
-<hr />
+<div class="col-md-10">
+<h3>新增會員</h3>
 <form name="myForm" method="POST" action="./member_insert.php" enctype="multipart/form-data">
 <table class="border search table table-stripe table-hover">
     <thead>
@@ -87,6 +88,6 @@
     </tfoot>
 </table>
 </form>
-
+</div>
 </body>
 </html>

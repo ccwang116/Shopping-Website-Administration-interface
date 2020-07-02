@@ -33,8 +33,7 @@ $searchbutton = $_GET["button"];
 <body>
 <?php require_once('./templates/title.php'); ?>
 <hr />
-
-<div class="search-bar">
+<div class="col-md-10">
 <h3>課程列表</h3>
 <br>
 <form action="admin.course.search.php" method="GET" entype= "multipart/form-data">
@@ -185,5 +184,6 @@ if($totalCatogories > 0) {
     //引入尚未建立商品種類的文字描述
     require_once('./templates/noCategory.php');
 }?>
+</div>
 </body>
 </html>

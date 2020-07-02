@@ -26,7 +26,7 @@ $page = $page < 1 ? 1 : $page; //若 page 小於 1，則回傳 1
 </head>
 <body>
 <?php require_once('./templates/title.php'); ?>
-<hr />
+<div class="col-md-10">
 
 <div class="search-bar">
 <h3>訂單列表</h3>
@@ -209,6 +209,6 @@ $page = $page < 1 ? 1 : $page; //若 page 小於 1，則回傳 1
 </div>
 
 </form>
-
+                </div>
 </body>
 </html>

@@ -39,7 +39,7 @@ function buildTree($pdo, $parentId = 0){
 </head>
 <body>
 <?php require_once('./templates/title.php'); ?>
-<hr />
+<div class="col-md-10">
 <h3>編輯類別</h3>
 <form name="myForm" method="POST" enctype= "multipart/form-data" action="./insertCategory.php">
 
@@ -82,5 +82,6 @@ function buildTree($pdo, $parentId = 0){
 </table>
 
 </form>
+</div>
 </body>
 </html>

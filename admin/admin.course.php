@@ -47,8 +47,7 @@ $totalCatogories = $pdo->query($sqlTotalCatogories)->fetch(PDO::FETCH_NUM)[0];
 </head>
 <body">
 <?php require_once('./templates/title.php'); ?>
-<hr />
-
+<div class="col-md-10">
 <div class="search-bar">
 <h3>課程列表</h3>
 <form action="admin.course.search.php" method="POST" enctype= "multipart/form-data">
@@ -159,5 +158,6 @@ if($totalCatogories > 0) {
     //引入尚未建立商品種類的文字描述
     require_once('./templates/noCategory.php');
 }?>
+</div>
 </body>
 </html>

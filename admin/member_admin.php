@@ -39,7 +39,7 @@ $page = $page < 1 ? 1 : $page;
 </head>
 <body>
 <?php require_once('./templates/title.php'); ?>
-<hr />
+<div class="col-md-10">
 
 <form name="myForm" method="POST" action="member_deleteIds.php">
     <table class="border search table table-stripe table-hover">
@@ -129,6 +129,6 @@ $page = $page < 1 ? 1 : $page;
     </table>
     <input class="btn mano_delete fas fa-trash-alt" type="submit" name="smb" value="刪除">
 </form>
-
+                </div>
 </body>
 </html>

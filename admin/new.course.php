@@ -56,7 +56,8 @@ function buildTree($pdo, $parentId = 0){
 
 
 <?php require_once('./templates/title.php'); ?>
-<hr />
+<div class="col-md-10">
+
 <h3>新增課程</h3>
 <form name="myForm" enctype="multipart/form-data" method="POST" action="add.course.php">
 
@@ -118,5 +119,6 @@ function buildTree($pdo, $parentId = 0){
     </tfoot>
 </table>
 </form>
+</div>
 </body>
 </html>

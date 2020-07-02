@@ -34,7 +34,7 @@ require_once('../db.inc.php'); //引用資料庫連線
 </head>
 <body>
 <?php require_once('./templates/title.php'); ?>
-<hr />
+<div class="col-md-10">
 <h3>新增行銷活動</h3>
 <form name="myForm" enctype="multipart/form-data" method="POST" action="addMarket.php">
 <table class="border table table-striped table-hover">
@@ -84,5 +84,6 @@ require_once('../db.inc.php'); //引用資料庫連線
     </tfoot>
 </table>
 </form>
+</div>
 </body>
 </html>

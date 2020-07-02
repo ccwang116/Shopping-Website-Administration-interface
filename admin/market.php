@@ -34,7 +34,7 @@ $totalDiscounts = $pdo->query($sqlTotalDiscounts)->fetch(PDO::FETCH_NUM)[0];
 </head>
 <body>
 <?php require_once('./templates/title.php'); ?>
-<hr />
+<div class="col-md-10">
 <h3>行銷活動列表</h3>
 
 <form action="marketSearch.php" method="GET" enctype= "multipart/form-data">
@@ -128,5 +128,6 @@ if($totalDiscounts > 0) {
     //引入尚未建立商品種類的文字描述
     require_once('./templates/noCategory.php');
 }?>
+</div>
 </body>
 </html>

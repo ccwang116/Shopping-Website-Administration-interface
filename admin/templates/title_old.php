@@ -29,9 +29,7 @@
         .d-flex {
             display: flex;
         }
-        h3{
-            margin-top:88px;
-        }
+
         /* 網頁呈現相關end */
 
         /* 樣式相關開始 */
@@ -111,17 +109,13 @@
             color: var(--mainColor);
         }
         .list-group-item{
-            color:var(--mainColor);
+            color: var(--mainColor);
             border-style:none;
+            
         }
-        .list-group2{
+        nav  a,nav a:hover{
             color: #fff;
-            border-style:none;
-            background:var(--mainColor);  
-        }
-        /* nav  a,nav a:hover{
-            color: #fff;
-        }  */
+        } 
        
         /* 清單相關結束 */
         .table {
@@ -141,68 +135,68 @@
         table td.expand { 
             width: 99% ;
         } 
-        .logout{
-            width:100%;
-            margin-top:360px;
-
-        }
-        .logout a{
-            width:100%;
-            display:block;
-        }
-        .list-title{
-            font-size:14pt;
-        }
+        
     </style>
 </head>
 <body >
 <div class="row">
 <div class="col-md-2 ">
 <nav class="navbar flex-column fixed-left h-100 ">
-<div class="list-group ">
-<a class="navbar-brand text-white mb-5" href="#">抹の後台</a>
+<div class="list-group">
+<a class="navbar-brand" href="#">抹の後台</a>
+<a href="./category.php" class="fab fa-envira list-group-item list-group-item-action">編輯類別</a>
 <!-- <div>|</div> -->
-
-  <div class="list-title  fas fa-mug-hot mb-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<div class="dropdown ">
+  <a class="btn  dropdown-toggle fab fa-envira " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     商品管理
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a href="./admin.php" class="dropdown-item fab fa-envira">商品列表</a>
+    <a href="./new.php" class="dropdown-item fab fa-envira">新增商品</a>
   </div>
-    <a href="./category.php" class="fab fa-envira list-group-item list-group2 list-group-item-action">編輯類別</a>
-
-    <a href="./admin.php" class="list-group-item list-group2 list-group-item-action fab fa-envira">商品列表</a>
-    <a href="./new.php" class="list-group-item list-group2 list-group-item-action fab fa-envira">新增商品</a>
+</div>
 <!-- <div>|</div> -->
 <!-- <a href="./admin.php" class="fab fa-envira">商品列表</a> |  -->
 <!-- <a href="./new.php" class="fab fa-envira">新增商品</a> |  -->
-  <div class="list-title fas fa-mug-hot mb-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disable>
+<div class="dropdown">
+  <a class="btn  dropdown-toggle fab fa-envira" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     課程管理
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a href="./admin.course.search.php" class="dropdown-item fab fa-envira">課程列表</a>
+    <a href="./new.course.php" class="dropdown-item fab fa-envira">新增課程</a>
   </div>
-    <a href="./admin.course.search.php" class="list-group-item list-group2 list-group-item-action fab fa-envira">課程列表</a>
-    <a href="./new.course.php" class="list-group-item list-group2 list-group-item-action fab fa-envira">新增課程</a>
+</div>
 <!-- <div>|</div> -->
 <!-- <a href="./admin.course.php" class="fab fa-envira">課程列表</a> | -->
 <!-- <a href="./new.course.php" class="fab fa-envira">新增課程</a> | -->
-<a href="./orders.php" class="fab fa-envira list-group-item list-group2 list-group-item-action">訂單一覽</a>
+<a href="./orders.php" class="fab fa-envira">訂單一覽</a>
 <!-- <div>|</div> -->
-<a href="./itemTracking.php" class="fab fa-envira list-group-item list-group2 list-group-item-action">商品追蹤管理</a>
+<a href="./itemTracking.php" class="fab fa-envira">商品追蹤管理</a>
+<!-- <div>|</div> -->
+<div class="dropdown">
+  <a class="btn  dropdown-toggle fab fa-envira" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    行銷管理
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a href="./market.php" class="dropdown-item fab fa-envira">活動列表</a>
+    <a href="./newMarket.php" class="dropdown-item fab fa-envira">新增活動</a>
+  </div>
+</div>
+<div class="dropdown">
+  <a class="btn  dropdown-toggle fab fa-envira" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    會員管理
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+  <a href="./member_Search.php" class="dropdown-item fab fa-envira">搜尋會員</a>
+    <a href="./member_admin.php" class="dropdown-item fab fa-envira">會員列表</a>
+    <a href="./member_new.php" class="dropdown-item fab fa-envira">新增會員</a>
+  </div>
+</div>
+<a href="./paymentType.php" class="fab fa-envira">編輯付款方式</a>
 <!-- <div>|</div> -->
 
-  <div class="list-title  fas fa-mug-hot mb-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    行銷管理
-  </div>
-    <a href="./market.php" class="list-group-item list-group2 list-group-item-action fab fa-envira">活動列表</a>
-    <a href="./newMarket.php" class="list-group-item list-group2 list-group-item-action fab fa-envira">新增活動</a>
-  <div class="list-title  fas fa-mug-hot mb-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    會員管理
-  </div>
-  
-  <a href="./member_Search.php" class="list-group-item list-group2 list-group-item-action fab fa-envira">搜尋會員</a>
-    <a href="./member_admin.php" class="list-group-item list-group2 list-group-item-action fab fa-envira">會員列表</a>
-    <a href="./member_new.php" class="list-group-item list-group2 list-group-item-action fab fa-envira">新增會員</a>
-<a href="./paymentType.php" class="fab fa-envira list-group-item list-group2 list-group-item-action">編輯付款方式</a>
-<!-- <div>|</div> -->
-<div class="logout ">
-<a href="../logout.php?logout=1" class="text-white text-center">登出</a>
-</div>
+<a href="../logout.php?logout=1" >登出</a>
 </div>
 </nav>
 <br>

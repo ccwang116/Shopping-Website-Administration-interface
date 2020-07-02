@@ -1,4 +1,4 @@
-<div class="album py-5 bg-light flex-shrink-0">
+<div class="album py-5 bg-light flex-shrink-0 ">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3"></div>

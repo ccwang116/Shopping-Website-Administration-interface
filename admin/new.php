@@ -43,21 +43,17 @@ require_once('../db.inc.php'); //引用資料庫連線
 </head>
 <body>
 <?php require_once('./templates/title.php'); ?>
-<hr />
+<div class="col-md-10">
 <h3>新增商品</h3>
 <form name="myForm" enctype="multipart/form-data" method="POST" action="add.php">
-<table class="border table table-striped table-hover">
+<table class="border table table-striped table-hover" style="width:90%">
     <thead>
         <tr>
             <th class="border">商品名稱</th>
             <th class="border">商品圖片路徑</th>
-            <th class="border">MSRP</th>
-            <th class="border">商品價格</th>
-            <th class="border">商品數量</th>
-            <th class="border">商品顏色</th>
-            <th class="border">商品尺寸</th>
-            <th class="border">物流編號</th>
-            <th class="border">商品種類</th>
+            <th></th>
+            <th></th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -68,21 +64,49 @@ require_once('../db.inc.php'); //引用資料庫連線
             <td class="border">
                 <input type="file" name="itemImg" value="" />
             </td>
-            <td class="border">
-                <input type="text" name="MSRP" value="" placeholder="100" style="width: 50%;"/>
-            </td>
-            <td class="border">
-                <input type="text" name="itemPrice" value="" placeholder="100" style="width: 50%;" maxlength="11" />
-            </td>
-            <td class="border">
-                <input type="text" name="itemQty" value="" placeholder="20" style="width: 30%;" maxlength="3" />
-            </td>
-            <td class="border">
-                <input type="text" name="itemColor" value="#" style="width: 60%;" maxlength="7" />
-            </td>
-            <td class="border">
-                <input type="text" name="Size" value="" style="width: 30%;" maxlength="3" />
-            </td>
+            
+           
+        </tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th class="border">MSRP</th>
+            <th class="border">商品價格</th>
+            <th class="border">商品數量</th>
+            <th class="border">商品顏色</th>
+            <th class="border">商品尺寸</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td class="border">
+            <input type="text" name="MSRP" value="" placeholder="100" style="width: 50%;"/>
+        </td>
+        <td class="border">
+            <input type="text" name="itemPrice" value="" placeholder="100" style="width: 50%;" maxlength="11" />
+        </td>
+        <td class="border">
+            <input type="text" name="itemQty" value="" placeholder="20" style="width: 30%;" maxlength="3" />
+        </td>
+        <td class="border">
+            <input type="text" name="itemColor" value="#" style="width: 60%;" maxlength="7" />
+        </td>
+        <td class="border">
+            <input type="text" name="Size" value="" style="width: 30%;" maxlength="3" />
+        </td>
+        </tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th class="border">物流編號</th>
+            <th class="border">商品種類</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
             <td class="border">
                 <input type="text" name="shippingId" value="S" style="width: 50%;" maxlength="5" />
             </td>
@@ -91,6 +115,10 @@ require_once('../db.inc.php'); //引用資料庫連線
                 <?php buildTree($pdo, 0); ?>
                 </select>
             </td>
+            <td></td>
+            <td></td>
+            <td></td>
+
         </tr>
     </tbody>
     <tfoot>
@@ -100,5 +128,6 @@ require_once('../db.inc.php'); //引用資料庫連線
     </tfoot>
 </table>
 </form>
+</div>
 </body>
 </html>

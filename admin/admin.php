@@ -37,9 +37,9 @@ $totalCatogories = $pdo->query($sqlTotalCatogories)->fetch(PDO::FETCH_NUM)[0];
     }
     </style>
 </head>
-<body>
+<body >
 <?php require_once('./templates/title.php'); ?>
-<hr />
+<div class="col-md-10">
 <h3>商品列表</h3>
 
 <a href="itemSearch.php" class="btn mano_edit far fa-file"><i class=""></i> 找茶</a>
@@ -62,8 +62,8 @@ if($totalCatogories > 0) {
                 <th class="border">商品顏色</th>
                 <th class="border">商品尺寸</th>
                 <th class="border">物流代號</th>
-                <th class="border">新增時間</th>
-                <th class="border">更新時間</th>
+                <!-- <th class="border">新增時間</th>
+                <th class="border">更新時間</th> -->
                 <th class="border">功能</th>
             </tr>
         </thead>
@@ -103,8 +103,8 @@ if($totalCatogories > 0) {
                 <td class="border"><?php echo $arr[$i]['itemColor']; ?></td>
                 <td class="border"><?php echo $arr[$i]['Size']; ?></td>
                 <td class="border"><?php echo $arr[$i]['shippingId']; ?></td>
-                <td class="border"><?php echo $arr[$i]['created_at']; ?></td>
-                <td class="border"><?php echo $arr[$i]['updated_at']; ?></td>
+                <!-- <td class="border"><?php echo $arr[$i]['created_at']; ?></td>
+                <td class="border"><?php echo $arr[$i]['updated_at']; ?></td> -->
                 <td class="border">
                     <a class="btn mano_check far fa-file" href="./edit.php?itemId=<?php echo $arr[$i]['itemId']; ?>">商品編輯</a>
                     <!-- <a  class="btn mano_edit far fa-images" style="margin: 12px 2px;" href="./multipleImages.php?itemId=<?php //echo $arr[$i]['itemId']; ?>">多圖設定</a><br> -->
@@ -146,5 +146,7 @@ if($totalCatogories > 0) {
     //引入尚未建立商品種類的文字描述
     require_once('./templates/noCategory.php');
 }?>
+</div>
+</div>
 </body>
 </html>
