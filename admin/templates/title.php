@@ -162,6 +162,7 @@
 <div class="list-group ">
 <a class="navbar-brand text-white mb-5" href="#">抹の後台</a>
 <!-- <div>|</div> -->
+<a href="./statistics.php" class="list-group-item list-group2 list-group-item-action fab fa-envira">統計資料</a>
 
   <div class="list-title  fas fa-mug-hot mb-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     商品管理
